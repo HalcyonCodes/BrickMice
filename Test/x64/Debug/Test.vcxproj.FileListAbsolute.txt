@@ -1,0 +1,2 @@
+D:\BrickMice\Test\x64\Debug\Test.vcxproj.AssemblyReference.cache
+D:\BrickMice\Test\x64\Debug\Test.vcxproj.SuggestedBindingRedirects.cache

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\BrickMice\BrickMice\x64\Debug\BrickMice.exe</FullPath>
+      <FullPath>D:\BrickMice\BIN\BrickMice.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

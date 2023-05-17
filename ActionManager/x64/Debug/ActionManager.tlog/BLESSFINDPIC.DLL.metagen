@@ -1,0 +1,60 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly BlessFindPic, Version=1.0.*, Culture=固定语言(固定国家/地区): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class BlessFindPic.BmpColor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Hashtable bmpTable : Public
+    System.Collections.Hashtable bmpSubTable : Public
+    System.Collections.Generic.List`1[System.Drawing.Bitmap] bmpList : Public
+  Properties:
+    BlessFindPic.BmpColor Instance 'get ' : 
+  Methods:
+    get_Instance(): PrivateScope, Public, Static, HideBySig, SpecialName
+    findPicOrigin(Int32, Int32, Int32, Int32, Bitmap, Bitmap, Int32, Boolean): PrivateScope, Public, Static, HideBySig
+    FindColor(Int32, Int32, Int32, Int32, Bitmap, Color, Int32): PrivateScope, Public, Static, HideBySig
+    isColor(Color, Color, Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    CopyScreen(Rectangle): PrivateScope, Public, Static, HideBySig
+    loadBmp(String): PrivateScope, Public, Static, HideBySig
+    loadBmpSub(String): PrivateScope, Public, Static, HideBySig
+    loadBmpList(String): PrivateScope, Public, Static, HideBySig
+    freeBmp(): PrivateScope, Public, Static, HideBySig
+    findPAPicA(IntPtr, Int32, Int32, Int32, Int32, String, Int32): PrivateScope, Public, Static, HideBySig
+    findDAPicA(IntPtr, Int32, Int32, Int32, Int32, String, Int32): PrivateScope, Public, Static, HideBySig
+    findSAPicA(IntPtr, Int32, Int32, Int32, Int32, String, Int32): PrivateScope, Public, Static, HideBySig
+    findPAPicN(IntPtr, Int32, Int32, Int32, Int32, String, Int32): PrivateScope, Public, Static, HideBySig
+    findDAPicN(IntPtr, Int32, Int32, Int32, Int32, String, Int32): PrivateScope, Public, Static, HideBySig
+    findSAPicN(IntPtr, Int32, Int32, Int32, Int32, String, Int32): PrivateScope, Public, Static, HideBySig
+    findLNPicA(IntPtr, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    findLNPicN(IntPtr, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class BlessFindPic.GetScreen: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateDC(String, String, String, IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    BitBlt(IntPtr, Int32, Int32, Int32, Int32, IntPtr, Int32, Int32, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    CreateCompatibleDC(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    CreateCompatibleBitmap(IntPtr, Int32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SelectObject(IntPtr, IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DeleteDC(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    PrintWindow(IntPtr, IntPtr, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetWindowDC(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DeleteObject(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    getWindow(IntPtr): PrivateScope, Public, Static, HideBySig
+    saveBitMap(Bitmap, String, String): PrivateScope, Public, Static, HideBySig
+    findWindow(String, String): PrivateScope, Public, Static, HideBySig
+    saveBitMapByOffset(Bitmap, Int32, Int32, Int32, Int32, String, String): PrivateScope, Public, Static, HideBySig
+    getScreenBound(): PrivateScope, Public, Static, HideBySig
+    getWindowBasePoint(IntPtr): PrivateScope, Public, Static, HideBySig
+Struct BlessFindPic.GetScreen+RECT: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 Left : Public
+    Int32 Top : Public
+    Int32 Right : Public
+    Int32 Bottom : Public
